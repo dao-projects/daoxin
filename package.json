@@ -1,0 +1,16 @@
+{
+  "name": "daoxin",
+  "private": true,
+  "description": " 前端通用工程化 | General front-end engineering",
+  "scripts": {
+    "ni": "npm install && lerna bootstrap --hoist",
+    "start": "lerna run --scope @daoxin/* --parallel start",
+    "build": "lerna run --scope @daoxin/* build",
+    "serve": "lerna run --scope @daoxin/* --parallel serve",
+    "clean": "lerna run --scope @daoxin/* --parallel clean",
+    "rnm": "lerna exec -- rm -rf node_modules  && rm -rf package-lock.json"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
