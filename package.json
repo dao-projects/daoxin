@@ -15,7 +15,6 @@
   "devDependencies": {
     "download-git-repo": "^3.0.2",
     "inquirer": "^8.2.0",
-    "lerna": "^4.0.0",
-    "ora": "^6.0.1"
+    "lerna": "^4.0.0"
   }
 }
