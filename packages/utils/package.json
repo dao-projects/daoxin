@@ -1,0 +1,6 @@
+{
+    "name": "@daoxin/utils",
+    "main": "index.ts",
+    "private": true,
+    "license": "MIT"
+}

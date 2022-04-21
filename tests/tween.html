@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tween 动画</title>
+    <script src="../dist/utils/tween.js"></script>
+    <script src="../dist/utils/easing.js"></script>
+    <style type="text/css">
+      .container {
+        width: 100%;
+        height: 800px;
+        position: relative;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        color: #fff;
+        background: #ff0000;
+        position: absolute;
+        top: 10%;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box">动画：盒子</div>
+    </div>
+    <script>
+      console.log(this);
+      //利用tween.js返回特殊值，生成不同效果
+      function tweenFn(obj, attr, value, endFn) {
+        var timer = null;
+        var start = 0; //开始位置
+        var t = 0; //从0步开始
+        var endT = 30; //结束步数
+        clearInterval(timer);
+        timer = setInterval(function () {
+          t++;
+          if (t > endT) {
+            clearInterval(timer);
+            endFn && endFn(); //回调函数存在则返回
+            return;
+          }
+          //   obj.style[attr] = cubic.easeInOut(t, start, value, endT) + "px";
+          //   obj.style[attr] = quint.easeInOut(t, start, value, endT) + "px";
+          //   obj.style[attr] = expo.easeInOut(t, start, value, endT) + "px";
+          //   obj.style[attr] = circ.easeInOut(t, start, value, endT) + "px";
+          //   obj.style[attr] = elastic.easeInOut(t, start, value, endT) + "px";
+          //   obj.style[attr] = back.easeInOut(t, start, value, endT) + "px";
+          obj.style[attr] = bounce.easeInOut(t, start, value, endT) + "px";
+        }, 30);
+      }
+      tweenFn(document.getElementById("box"), "left", 500, function () {
+        console.log("动画结束");
+      });
+    </script>
+  </body>
+</html>

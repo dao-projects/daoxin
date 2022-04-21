@@ -1,20 +1,21 @@
 {
-  "name": "daoxin",
   "private": true,
-  "description": " 前端通用工程化 | General front-end engineering",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "docs"
+  ],
   "scripts": {
-    "create": "node scripts/create.js",
-    "ni": "npm install && lerna bootstrap --hoist",
-    "start": "lerna run --scope @daoxin/* --parallel start",
-    "build": "lerna run --scope @daoxin/* build",
-    "serve": "lerna run --scope @daoxin/* --parallel serve",
-    "test": "lerna run --scope @daoxin/* --parallel test",
-    "clean": "lerna run --scope @daoxin/* --parallel clean",
-    "rnm": "lerna exec -- rm -rf node_modules  && rm -rf package-lock.json"
+    "_build": "npm run build --workspaces",
+    "build": "make build",
+    "ts":"node scripts/tsconfig.js && tsc"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --format=codeframe"
+    ]
   },
   "devDependencies": {
-    "download-git-repo": "^3.0.2",
-    "inquirer": "^8.2.0",
-    "lerna": "^4.0.0"
+    "@types/node": "^17.0.25"
   }
 }

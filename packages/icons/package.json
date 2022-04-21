@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "name": "@daoxin/icons",
+  "main": "index.ts",
+  "private": true,
+  "license": "MIT"
+}

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "moduleResolution":"node",
+    "module": "esNext",
+    "target": "esNext",
+    "allowJs": false, // 编译为js
+    "noImplicitAny": false,
+    "declaration": true,
+    "sourceMap": false,
+    // "lib": ["ES2018", "DOM", "DOM.Iterable"],
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./dist",
+    "esModuleInterop":true,
+    "strict":false
+  },
+  "include": ["packages/icons/index.ts", "packages/utils/index.ts"],
+  "exclude": ["node_modules", "**/dist", "**/__tests__/**/*"]
+}

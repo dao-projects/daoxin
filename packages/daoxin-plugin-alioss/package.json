@@ -1,0 +1,37 @@
+{
+  "name": "@daoxin/plugin-alioss",
+  "version": "0.0.1",
+  "description": "基于alioss的扩展工具（插件）.",
+  "main": "./lib/index.js",
+  "author": "@daoxin (https://github.com/dao-projects)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dao-projects/daoxin.git",
+    "directory": "packages/daoxin-plugin-alioss"
+  },
+  "bugs": {
+    "url": "https://github.com/dao-projects/daoxin/tree/main/packages/daoxin-plugin-alioss/issues"
+  },
+  "homepage": "https://github.com/dao-projects/daoxin/tree/main/packages/daoxin-plugin-alioss#readme",
+  "keywords": [
+    "es6",
+    "alioss",
+    "plugin",
+    "daoxin"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "ali-oss": "^6.1.0"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  }
+}
