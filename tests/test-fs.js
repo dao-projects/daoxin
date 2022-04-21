@@ -60,7 +60,14 @@ const resolvePath = (pathname) => pathname.replace(/\\/g, "/");
 const fullPath = (pathname) => path.resolve(pathname);
 
 // 上传路径
-const uploadPath = (pathname, prefix = "") => resolvePath(path.join(config.ossPath, prefix, pathname.indexOf("..") === 0 ? pathname.substr(1) : pathname));
+const uploadPath = (pathname, prefix = "") =>
+  resolvePath(
+    path.join(
+      config.ossPath,
+      prefix,
+      pathname.indexOf("..") === 0 ? pathname.substr(1) : pathname
+    )
+  );
 
 walk(config.buildPath, (pathname, file, prefix = "") => {
   const result = client.put(uploadPath(pathname, prefix), pathname);

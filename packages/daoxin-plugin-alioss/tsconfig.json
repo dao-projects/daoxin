@@ -1,0 +1,8 @@
+{
+  "extends": "@daoxin/tsconfig/tsconfig.node.json",
+  "include": ["src/index.ts"],
+  "compilerOptions": {
+    "strict": false,
+    "outDir": "./lib"
+  }
+}

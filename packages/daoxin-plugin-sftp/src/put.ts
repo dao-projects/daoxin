@@ -1,4 +1,4 @@
 export default {
-  name: 'daoxin-plugin-sftp',
-  version: '0.0.1',
-}
+  name: "daoxin-plugin-sftp",
+  version: "0.0.1",
+};

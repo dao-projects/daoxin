@@ -3,7 +3,7 @@
 $ npm init -w packages/icons
 
 # 添加npm依赖（单个）
-$ npm install axios -w icons 
+$ npm install axios -w icons
 
 # 添加npm依赖（全部）
 $ npm install axios -ws

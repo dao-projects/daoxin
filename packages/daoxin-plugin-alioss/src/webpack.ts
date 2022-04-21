@@ -53,7 +53,14 @@ class daoxinPluginAlioss {
   fullPath = (pathname) => path.resolve(pathname);
 
   // 上传路径
-  uploadPath = (pathname, prefix = "") => this.resolvePath(path.join(this.config.ossPath, prefix, pathname.indexOf("..") === 0 ? pathname.substr(1) : pathname));
+  uploadPath = (pathname, prefix = "") =>
+    this.resolvePath(
+      path.join(
+        this.config.ossPath,
+        prefix,
+        pathname.indexOf("..") === 0 ? pathname.substr(1) : pathname
+      )
+    );
 
   /**
    * 文件遍历

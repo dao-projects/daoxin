@@ -1,0 +1,31 @@
+{
+  "name": "@daoxin/tsconfig",
+  "version": "0.0.1",
+  "description": "基于tsconfig的扩展工具（插件）.",
+  "main": "tsconfig.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dao-projects/daoxin.git",
+    "directory": "packages/daoxin-tsconfig"
+  },
+  "keywords": [
+    "tsconfig"
+  ],
+  "author": "@daoxin <liuhangbiaoo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dao-projects/daoxin/issues"
+  },
+  "homepage": "https://github.com/dao-projects/daoxin/tree/main/packages/daoxin-tsconfig#readme",
+  "peerDependencies": {
+    "@types/node": "*"
+  },
+  "peerDependenciesMeta": {
+    "@types/node": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

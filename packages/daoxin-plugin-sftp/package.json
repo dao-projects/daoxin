@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "基于sftp的扩展工具（插件）.",
   "main": "./lib/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
   "author": "@daoxin (https://github.com/dao-projects)",
   "license": "MIT",
   "publishConfig": {

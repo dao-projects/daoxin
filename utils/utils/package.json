@@ -1,6 +1,5 @@
 {
-  "type": "module",
-  "name": "@daoxin/icons",
+  "name": "@daoxin/utils",
   "main": "index.ts",
   "private": true,
   "license": "MIT"

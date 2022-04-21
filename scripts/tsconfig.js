@@ -24,7 +24,9 @@ fs.writeFileSync(
       extends: "./tsconfig.base.json",
       include: tsPkgs.map(({ relative }) => `${relative}/src/**/*.ts`),
       compilerOptions: {
-        paths: Object.fromEntries(tsPkgs.map(({ name, relative }) => [name, [`${relative}/src`]])),
+        paths: Object.fromEntries(
+          tsPkgs.map(({ name, relative }) => [name, [`${relative}/src`]])
+        ),
       },
     },
     null,
