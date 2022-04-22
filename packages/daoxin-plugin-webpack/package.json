@@ -1,0 +1,7 @@
+{
+  "name": "@daoxin/plugin-webpack",
+  "version": "0.0.1",
+  "description": "基于webpack的扩展工具（插件）.",
+  "main": "./lib/index.js",
+  "license": "MIT"
+}

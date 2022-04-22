@@ -4,7 +4,10 @@
   "description": "基于sftp的扩展工具（插件）.",
   "main": "./lib/index.js",
   "scripts": {
-    "build": "tsc"
+    "build:ts": "tsc",
+    "build:dom": "rollup lib/index.js --format iife --file dom/index.js",
+    "build:cjs": "rollup lib/index.js --format cjs --file cjs/index.js",
+    "build:umd": "rollup lib/index.js --format umd  --file umd/index.js --name 'daoxin-plugin-sftp'"
   },
   "author": "@daoxin (https://github.com/dao-projects)",
   "license": "MIT",
@@ -30,9 +33,7 @@
     "node": ">=14.0.0"
   },
   "devDependencies": {},
-  "dependencies": {
-    "ali-oss": "^6.1.0"
-  },
+  "dependencies": {},
   "exports": {
     ".": "./lib/index.js",
     "./package.json": "./package.json"

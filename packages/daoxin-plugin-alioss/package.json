@@ -4,7 +4,8 @@
   "description": "基于alioss的扩展工具（插件）.",
   "main": "./lib/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "build:watch": "tsc -w"
   },
   "author": "@daoxin (https://github.com/dao-projects)",
   "license": "MIT",

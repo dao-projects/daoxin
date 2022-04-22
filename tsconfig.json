@@ -1,17 +1,35 @@
+// {
+//   "extends": "./tsconfig.base.json",
+//   "include": [
+//     "./packages/daoxin-plugin-alioss/src/**/*.ts",
+//     "./packages/daoxin-plugin-sftp/src/**/*.ts"
+//   ],
+//   "compilerOptions": {
+//     "paths": {
+//       "@daoxin/plugin-alioss": [
+//         "./packages/daoxin-plugin-alioss/src"
+//       ],
+//       "@daoxin/plugin-sftp": [
+//         "./packages/daoxin-plugin-sftp/src"
+//       ]
+//     }
+//   }
+// }
+
 {
-  "extends": "./tsconfig.base.json",
-  "include": [
-    "./packages/daoxin-plugin-alioss/src/**/*.ts",
-    "./packages/daoxin-plugin-sftp/src/**/*.ts"
-  ],
   "compilerOptions": {
-    "paths": {
-      "@daoxin/plugin-alioss": [
-        "./packages/daoxin-plugin-alioss/src"
-      ],
-      "@daoxin/plugin-sftp": [
-        "./packages/daoxin-plugin-sftp/src"
-      ]
-    }
-  }
+    "lib": ["dom", "es2020"],
+    "target": "es2020",
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "types": ["node"],
+    "allowJs": true,
+    "esModuleInterop": true
+  },
+  "include": ["packages/**/*", "playwright.config.ts"],
+  "exclude": ["node_modules"]
 }

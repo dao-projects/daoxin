@@ -1,1 +1,1 @@
-export * from "./put";
+export * from './put'

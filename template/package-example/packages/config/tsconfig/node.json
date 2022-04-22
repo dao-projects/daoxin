@@ -1,0 +1,7 @@
+{
+  "extends": "./index.json",
+  "compilerOptions": {
+    "lib": [],
+    "types": ["node"]
+  }
+}

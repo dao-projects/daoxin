@@ -1,0 +1,14 @@
+**/*.spec.js
+**/*.spec.ts
+**/dist
+**/cjs
+**/lib
+**/esm
+node_modules/*
+**/node_modules/*
+**/*.md
+**/*.map
+**/test
+**/tests
+**/__tests__
+_**/*.*

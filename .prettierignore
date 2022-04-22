@@ -9,5 +9,5 @@ node_modules/*
 **/tests
 **/__tests__
 _**/*.*
-**/*.json
+**/*.xjson
 **/lib/*.*

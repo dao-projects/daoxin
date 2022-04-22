@@ -1,0 +1,8 @@
+{
+  "name": "@daoxin/config",
+  "version": "1.0.0",
+  "description": "项目常用配置集合",
+  "main": "index.js",
+  "author": "@daoxin <liuhangbiaoo@gmail.com>",
+  "license": "MIT"
+}

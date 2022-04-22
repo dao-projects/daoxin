@@ -1,0 +1,9 @@
+{
+  "name": "@daoxin/webpack",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack",
+    "build:umd": "webpack --config webpack.umd.config.js",
+    "build:cjs": "webpack --config webpack.commonjs.config.js"
+  }
+}

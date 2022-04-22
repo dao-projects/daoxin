@@ -1,3 +1,3 @@
-import icons from "@daoxin/icons";
+import icons from '@daoxin/icons'
 
-console.log(`1 + 1 = ${icons(1, 1)}`);
+console.log(`1 + 1 = ${icons(1, 1)}`)
