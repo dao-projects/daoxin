@@ -1,19 +1,18 @@
 {
-    "private": true,
-    "name": "daoxin",
-    "version": "0.0.1",
-    "workspaces": [
-      "packages/*"
-    ],
-    "scripts": {
-      "dev": "npm run dev --ws",
-      "start": "npm run start --ws",
-      "build": "npm run build --ws",
-      "serve": "npm run serve --ws",
-      "test": "npm run test --ws",
-      "docs": "npm run docs --ws",
-      "lint": "npm run lint --ws",
-      "format": "prettier --write ."
-    }
+  "private": true,
+  "name": "daoxin",
+  "version": "0.0.1",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --ws",
+    "start": "npm run start --ws",
+    "build": "npm run build --ws",
+    "serve": "npm run serve --ws",
+    "test": "npm run test --ws",
+    "docs": "npm run docs --ws",
+    "lint": "npm run lint --ws",
+    "format": "prettier --write ."
   }
-  
+}

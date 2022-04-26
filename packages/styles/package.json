@@ -1,0 +1,22 @@
+{
+  "name": "@daoxin/styles",
+  "version": "0.0.1",
+  "main": "reset.css",
+  "exports": {
+    ".": "./reset.css",
+    "./animation": "./animation.css",
+    "./function": "./function.css",
+    "./reset": "./reset.css",
+    "./animation.css": "./animation.css",
+    "./function.css": "./function.css",
+    "./reset.css": "./reset.css"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "push":"npm publish --access public"
+  },
+  "files": [
+    "function.css"
+  ],
+  "license": "MIT"
+}

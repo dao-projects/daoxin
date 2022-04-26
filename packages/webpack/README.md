@@ -1,6 +1,6 @@
 # @daoxin/webpack
 
-基于Webpack的基础配置扩展
+基于 Webpack 的基础配置扩展
 
 ## 如何使用
 
@@ -10,14 +10,14 @@
 $ npm i @daoxin/webpack cross-env -D
 ```
 
-2. 配置webpack.config.js
+2. 配置 webpack.config.js
 
 ```
 const { merge, webpackBaseConfig } = require("@daoxin/webpack");
 module.exports = merge(webpackBaseConfig, {});
 ```
 
-3. package.json配置
+3. package.json 配置
 
 ```{
   // 项目名称
@@ -47,4 +47,3 @@ module.exports = merge(webpackBaseConfig, {});
   },
 }
 ```
-
