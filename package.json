@@ -1,30 +1,19 @@
 {
-  "private": true,
-  "type": "module",
-  "workspaces": [
-    "packages/*",
-    "docs"
-  ],
-  "scripts": {
-    "format": "prettier --write .",
-    "build": "npm run build --workspaces",
-    "_build": "make build",
-    "ts": "node scripts/tsconfig.js && tsc"
-  },
-  "lint-staged": {
-    "*.{js,ts}": [
-      "eslint --format=codeframe"
-    ]
-  },
-  "devDependencies": {
-    "@types/node": "^17.0.25",
-    "prettier": "^2.6.2"
-  },
-  "prettier": {
-    "semi": false,
-    "tabWidth": 2,
-    "singleQuote": true,
-    "printWidth": 100,
-    "trailingComma": "none"
+    "private": true,
+    "name": "daoxin",
+    "version": "0.0.1",
+    "workspaces": [
+      "packages/*"
+    ],
+    "scripts": {
+      "dev": "npm run dev --ws",
+      "start": "npm run start --ws",
+      "build": "npm run build --ws",
+      "serve": "npm run serve --ws",
+      "test": "npm run test --ws",
+      "docs": "npm run docs --ws",
+      "lint": "npm run lint --ws",
+      "format": "prettier --write ."
+    }
   }
-}
+  

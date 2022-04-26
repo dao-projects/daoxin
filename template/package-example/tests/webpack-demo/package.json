@@ -1,8 +1,0 @@
-{
-  "name": "@daoxin/package-example/webpack-demo",
-  "version": "1.0.0",
-  "description": "测试webpack",
-  "scripts": {
-    "build": "webpack --progress"
-  }
-}
