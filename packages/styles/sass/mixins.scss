@@ -1,0 +1,23 @@
+/* Mixins */
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// 盒子
+@mixin box($w, $h) {
+  position: relative;
+  width: $w;
+  height: $h;
+}
+
+// 矩形
+@mixin square($w, $radius: 0) {
+  position: relative;
+  width: $w;
+  height: $w;
+  border-radius: $radius;
+}

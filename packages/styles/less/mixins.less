@@ -1,0 +1,24 @@
+/* Mixins */
+
+.clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// 盒子
+.box(@w, @h) {
+  position: relative;
+  width: @w;
+  height: @h;
+}
+
+// 矩形
+.square(@w, @radius: 0) {
+  position: relative;
+  width: @w;
+  height: @w;
+  border-radius: @radius;
+}

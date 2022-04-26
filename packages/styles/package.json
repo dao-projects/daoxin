@@ -13,10 +13,16 @@
   },
   "scripts": {
     "format": "prettier --write .",
-    "push":"npm publish --access public"
+    "push": "npm publish --access public"
   },
   "files": [
-    "function.css"
+    "reset.css",
+    "function.css",
+    "animation.css",
+    "READMDE.md",
+    "less",
+    "sass",
+    "package.json"
   ],
   "license": "MIT"
 }
