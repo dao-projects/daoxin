@@ -427,6 +427,20 @@ const isDirExist = (dirPath) => {
     mkdirSync(cwdResolve(dirPath));
   }
 };
+// /// <reference types="node" />
+// export default function isDirExist(p: fs.PathLike): void;
+// import fs from "fs";
+// /**
+//  * @param {import("fs").PathLike} p
+//  */
+// export default function isDirExist(p: fs.PathLike) {
+//     if (!fs.existsSync(p)) {
+//         console.log("所需的目录不存在,创建目录", p);
+//         console.log("\n");
+//         fs.mkdirSync(p);
+//     }
+// }
+// import fs from "fs";
 
 // 检查文件是否存在，不存在则创建
 const isFileExist = (filePath, context) => {
