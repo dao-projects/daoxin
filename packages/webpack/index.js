@@ -139,8 +139,11 @@ const devServerProxy = () => {
 };
 // css预处理器配置
 const cssLoader = {
-  styleLoader: {
-    loader: isProd ? MiniCssExtractPlugin.loader : "style-loader",
+  // styleLoader: {
+  //   loader: isProd ? MiniCssExtractPlugin.loader : "style-loader",
+  // },
+  styleLoader:{
+        ...(isProd && {loader: MiniCssExtractPlugin.loader, options: {publicPath: "../"}}) || {loader: "style-loader"}
   },
   cssLoader: {
     loader: "css-loader",
@@ -451,8 +454,6 @@ const isFileExist = (filePath, context) => {
 
 // 初始化项目
 const initProject = () => {
-  // 初始化版本自增
-  versionIncrement();
   // 初始化项目目录
   isDirExist("public");
   isDirExist("src");
@@ -465,6 +466,9 @@ const initProject = () => {
   //     `const add = (x: number, y: number): number => x + y;function component() {const element = document.createElement("div");element.innerHTML = add(112, 33) + " Hello  webpack ${pkg.name}";return element;}document.querySelectorAll("#app")[0].appendChild(component());    `
   // );
 };
+
+// 初始化版本自增
+versionIncrement();
 
 // 开始
 initProject();
