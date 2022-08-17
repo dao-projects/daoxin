@@ -1,0 +1,17 @@
+{
+  "name": "@daoxin/event",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "push": "npm publish --access public",
+    "dev": "tsc --watch",
+    "_build": "npm run clean && tsc",
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

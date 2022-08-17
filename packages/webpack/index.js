@@ -142,8 +142,11 @@ const cssLoader = {
   // styleLoader: {
   //   loader: isProd ? MiniCssExtractPlugin.loader : "style-loader",
   // },
-  styleLoader:{
-        ...(isProd && {loader: MiniCssExtractPlugin.loader, options: {publicPath: "../"}}) || {loader: "style-loader"}
+  styleLoader: {
+    ...((isProd && {
+      loader: MiniCssExtractPlugin.loader,
+      options: { publicPath: "../" },
+    }) || { loader: "style-loader" }),
   },
   cssLoader: {
     loader: "css-loader",
