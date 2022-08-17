@@ -1,6 +1,6 @@
 # EventBus
 
-一个极简的EventBus事件总线.
+一个极简的 EventBus 事件总线.
 
 ## Install
 
@@ -18,8 +18,6 @@ yarn add @daoxin/event
 
 ### Get Started
 
-It is recommended to use the `kebab-case` event name.
-
 ```js
 import EventBus from "@daoxin/event";
 
@@ -31,6 +29,47 @@ hub.on("custom-send", (message) => {
 
 hub.emit("custom-send", "Hello, EventBus!");
 // => Hello, EventBus!
+```
+
+or
+
+```js
+import mitt from "@daoxin/event/mitt";
+
+const emitter = mitt()
+
+// listen to an event
+emitter.on('foo', e => console.log('foo', e) )
+
+// listen to all events
+emitter.on('*', (type, e) => console.log(type, e) )
+
+// fire an event
+emitter.emit('foo', { a: 'b' })
+
+// clearing all events
+emitter.all.clear()
+
+// working with handler references:
+function onFoo() {}
+emitter.on('foo', onFoo)   // listen
+emitter.off('foo', onFoo)  // unlisten
+
+# typescript
+
+import mitt from "@daoxin/event/mitt";
+
+type Events = {
+  foo: string;
+  bar?: number;
+};
+
+const emitter = mitt<Events>(); // inferred as Emitter<Events>
+
+emitter.on('foo', (e) => {}); // 'e' has inferred type 'string'
+
+emitter.emit('foo', 42); // Error: Argument of type 'number' is not assignable to parameter of type 'string'. (2345)
+// looks => https://github.com/developit/mitt
 ```
 
 ### Instance Methods

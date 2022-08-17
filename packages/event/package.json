@@ -1,6 +1,6 @@
 {
   "name": "@daoxin/event",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
   "type": "module",
@@ -22,14 +22,16 @@
     "url": "https://github.com/dao-projects/daoxin.git"
   },
   "keywords": [
-    "event-hub",
-    "event-bus",
-    "bus",
-    "hub",
+    "eventBus",
     "event",
+    "events",
     "trigger",
     "dispatch",
-    "listener"
+    "listener",
+    "eventemitter",
+    "emitter",
+    "mitt",
+    "pubsub"
   ],
   "author": "molvqingtai",
   "license": "MIT",
