@@ -1,8 +1,6 @@
 # EventBus
 
-[![version](https://img.shields.io/github/v/release/dao-projects/daoxin)](https://www.npmjs.com/package/@daoxin/event) [![deno land](http://img.shields.io/badge/available%20on-deno.land/x-lightgrey.svg?logo=deno&labelColor=black&color=blue)](https://deno.land/x/event_hub) [![workflow](https://github.com/dao-projects/daoxin/actions/workflows/ci.yml/badge.svg)](https://github.com/dao-projects/daoxin/actions) [![coverage](coverage/badge.svg)](coverage/coverage-summary.json) [![download](https://img.shields.io/npm/dt/@daoxin/event)](https://www.npmjs.com/package/@daoxin/event) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
-🚌 This is a minimalist event hub.
+一个极简的EventBus事件总线.
 
 ## Install
 

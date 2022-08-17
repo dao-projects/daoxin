@@ -1,9 +1,15 @@
 {
   "name": "@daoxin/event",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
   "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./types/index.d.ts": "./dist/types/index.d.ts",
+    "./mitt": "./dist/mitt.js",
+    "./mitt/types/mitt.d.ts": "./dist/types/mitt.d.ts"
+  },
   "scripts": {
     "push": "npm publish --access public",
     "dev": "tsc --watch",
@@ -11,6 +17,26 @@
     "build": "tsc",
     "clean": "rm -rf dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dao-projects/daoxin.git"
+  },
+  "keywords": [
+    "event-hub",
+    "event-bus",
+    "bus",
+    "hub",
+    "event",
+    "trigger",
+    "dispatch",
+    "listener"
+  ],
+  "author": "molvqingtai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dao-projects/daoxin/issues"
+  },
+  "homepage": "https://github.com/dao-projects/daoxin/tree/main/packages/event#readme",
   "publishConfig": {
     "access": "public"
   }

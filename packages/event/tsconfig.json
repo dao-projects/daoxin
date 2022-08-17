@@ -100,7 +100,7 @@
     "module": "ESNext", // 指定输出模块规范，默认为 Commonjs
     "lib": ["ESNext", "DOM"], // 编译需要包含的 API，默认为 target 的默认值
     "outDir": "dist", // 编译输出文件夹路径，默认为源文件同级目录
-    "sourceMap": true, // 启用 sourceMap，默认为 false
+    // "sourceMap": true, // 启用 sourceMap，默认为 false
     "declaration": true, // 生成 .d.ts 类型文件，默认为 false
     "declarationDir": "dist/types", // .d.ts 类型文件的输出目录，默认为 outDir 目录
     /* Strict Type-Checking Options */
