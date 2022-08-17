@@ -72,6 +72,58 @@ emitter.emit('foo', 42); // Error: Argument of type 'number' is not assignable t
 // looks => https://github.com/developit/mitt
 ```
 
+or   in Vue
+
+```js
+import EventBus from "@daoxin/event";
+import mitt from "@daoxin/event/mitt";
+
+# Vue2
+new Vue({
+  router,
+  store,
+  render: (h) => h(App),
+  beforeCreate() {
+    Vue.prototype.$bus = this	// Global Install vm
+    Vue.prototype.$eventBus = new EventBus()	//Global Install EventBus
+    Vue.prototype.$emitter = new mitt()	//Global Install EventBus
+  }
+}).$mount("#app");
+
+// example:
+this.$bus.on('useBus', function(data) {	console.log(data)})
+this.$bus.emit('useBus', '111')
+
+this.$eventBus.on('useBus', function(data) {	console.log(data)})
+this.$eventBus.emit('useBus', '111')
+
+this.$emitter.on('useBus', function(data) {	console.log(data)})
+this.$emitter.emit('useBus', '111')
+
+# Vue3
+import App from "./App"
+
+const app = createApp(App)
+app.use(router).use(store).use("#app")
+
+app.config.globalProperties.$eventBus = EventBus()
+app.config.globalProperties.$emitter = mitt()
+
+// example:
+import { getCurrentInstance } from "vue";
+const { proxy } = getCurrentInstance()
+proxy.$eventBus.on('foo', e => console.log('foo', e))
+proxy.$eventBus.emit('foo', '11')
+
+proxy.$emitter.on('foo', e => console.log('foo', e))
+proxy.$emitter.emit('foo', '11')
+
+// unmounted
+onUnmounted(()=>{proxy.$eventBus.off('foo')})
+onUnmounted(()=>{proxy.$emitter.off('foo')})
+```
+
+
 ### Instance Methods
 
 **Event**
