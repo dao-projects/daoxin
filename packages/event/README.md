@@ -182,4 +182,4 @@ type Event = string | symbol;
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/dao-projects/daoxin/blob/main/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/dao-projects/daoxin/blob/main/packages/event/LICENSE) file for details
