@@ -1,21 +1,21 @@
 {
   "name": "@daoxin/event",
-  "version": "0.0.4",
-  "main": "dist/index.js",
-  "types": "dist/types/index.d.ts",
+  "version": "0.0.5",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
   "type": "module",
   "exports": {
-    ".": "./dist/index.js",
-    "./types/index.d.ts": "./dist/types/index.d.ts",
-    "./mitt": "./dist/mitt.js",
-    "./mitt/types/mitt.d.ts": "./dist/types/mitt.d.ts"
+    ".": "./lib/index.js",
+    "./types/index.d.ts": "./lib/types/index.d.ts",
+    "./mitt": "./lib/mitt.js",
+    "./mitt/types/mitt.d.ts": "./lib/types/mitt.d.ts"
   },
   "scripts": {
     "push": "npm publish --access public",
     "dev": "tsc --watch",
     "_build": "npm run clean && tsc",
     "build": "tsc",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf lib"
   },
   "repository": {
     "type": "git",
