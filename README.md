@@ -27,5 +27,4 @@ $ npm run dev -w=@daoxin/config // 或($ --workspace=@daoxin/config)
 
 ## 协作者
 
-> @Jason
-> @DaoXin
+> @daoixn
