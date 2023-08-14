@@ -14,5 +14,8 @@
     "docs": "npm run docs --ws",
     "lint": "npm run lint --ws",
     "format": "prettier --write ."
+  },
+  "_publishConfig": {
+    "@<em>daoxin</em>:registry": "https://npm.pkg.github.com"
   }
 }
