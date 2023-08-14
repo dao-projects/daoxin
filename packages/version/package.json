@@ -1,0 +1,8 @@
+{
+  "name": "@daoxin/version",
+  "version": "0.0.1",
+  "main": "index.js",
+  "script": {
+    "push": "npm publish --access public"
+  }
+}
