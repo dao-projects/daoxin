@@ -1,10 +1,10 @@
-name: Npm publish npmjs.org
+name: Node.js Package
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: [main]
+  release:
+    types: [created]
 
 jobs:
   build:
@@ -15,19 +15,18 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
+      - run: npm test
 
-  publish-npmjs:
+  publish-npm:
     needs: build
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          registry-url: https://npm.pkg.github.com/
-      - run: npm run push
+          registry-url: https://registry.npmjs.org/
+      - run: npm ci
+      - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
