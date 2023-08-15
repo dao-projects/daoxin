@@ -16,6 +16,10 @@
     "format": "prettier --write .",
     "push:version":"npm run push -w=@daoxin/version"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dao-projects/daoxin.git"
+  },
   "_publishConfig": {
     "@<em>daoxin</em>:registry": "https://npm.pkg.github.com"
   }

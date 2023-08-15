@@ -1,4 +1,4 @@
-declare type Event = string | symbol;
+type Event = string | symbol;
 export default class EventBus {
     private readonly listeners;
     private add;
