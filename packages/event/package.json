@@ -19,7 +19,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dao-projects/daoxin.git"
+    "url": "https://github.com/dao-projects/daoxin.git",
+    "directory": "packages/event"
   },
   "keywords": [
     "eventBus",
@@ -33,7 +34,7 @@
     "mitt",
     "pubsub"
   ],
-  "author": "molvqingtai",
+  "author": "Daoxin",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dao-projects/daoxin/issues"

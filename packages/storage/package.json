@@ -4,5 +4,16 @@
   "main": "index.js",
   "scripts": {
     "push": "npm publish --access public"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dao-projects/daoxin.git",
+    "directory": "packages/storage"
+  },
+  "bugs": {
+    "url": "https://github.com/dao-projects/daoxin/issues"
+  },
+  "homepage": "https://github.com/dao-projects/daoxin/tree/main/packages/storage#readme",
+  "author": "Daoxin",
+  "license": "MIT"
 }
