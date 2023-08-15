@@ -28,7 +28,7 @@ jobs:
 
       - name: 发布npm仓库
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
         run: npm run push
 
           
