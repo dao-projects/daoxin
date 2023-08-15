@@ -2,7 +2,7 @@
   "name": "@daoxin/config",
   "version": "0.0.3",
   "main": "index.js",
-  "script": {
+  "scripts": {
     "push": "npm publish --access public"
   },
   "repository": {

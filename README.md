@@ -25,6 +25,53 @@ $ npm run dev  // 或 ($ npm run dev -ws)
 $ npm run dev -w=@daoxin/config // 或($ --workspace=@daoxin/config)
 ```
 
+## @daoxin/config [文档](https://dao-projects.github.io/daoxin/packages/config/)
+```
+npm i @daoxin/config
+```
+
+## @daoxin/cookie [文档](https://dao-projects.github.io/daoxin/packages/cookie/)
+
+```
+npm i @daoxin/cookie
+```
+
+## @daoxin/event [文档](https://dao-projects.github.io/daoxin/packages/event/)
+
+```
+npm i @daoxin/event
+```
+
+## @daoxin/getclass [文档](https://dao-projects.github.io/daoxin/packages/getclass/)
+
+```
+npm i @daoxin/getclass
+```
+
+## @daoxin/storage [文档](https://dao-projects.github.io/daoxin/packages/storage/)
+
+```
+npm i @daoxin/storage
+```
+
+## @daoxin/styles [文档](https://dao-projects.github.io/daoxin/packages/styles/)
+
+```
+npm i @daoxin/styles
+```
+
+## @daoxin/version [文档](https://dao-projects.github.io/daoxin/packages/version/)
+
+```
+npm i @daoxin/version
+```
+
+## @daoxin/webpack [文档](https://dao-projects.github.io/daoxin/packages/webpack/)
+
+```
+npm i @daoxin/webpack
+```
+
 ## 协作者
 
 > @daoixn
