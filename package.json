@@ -13,7 +13,8 @@
     "test": "npm run test --ws",
     "docs": "npm run docs --ws",
     "lint": "npm run lint --ws",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "push:version":"npm run push -w=@daoxin/version"
   },
   "_publishConfig": {
     "@<em>daoxin</em>:registry": "https://npm.pkg.github.com"
