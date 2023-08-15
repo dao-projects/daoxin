@@ -11,10 +11,11 @@
     "build": "npm run build --ws",
     "serve": "npm run serve --ws",
     "test": "npm run test --ws",
+    "push": "npm run push --ws",
     "docs": "npm run docs --ws",
     "lint": "npm run lint --ws",
     "format": "prettier --write .",
-    "push": "npm run push --ws",
+    "ci":"echo \"npm \" && exit 1",
     "push:version":"npm run push -w=@daoxin/version"
   },
   "repository": {
