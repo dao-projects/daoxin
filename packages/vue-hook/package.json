@@ -1,0 +1,8 @@
+{
+    "name": "@daoxin/vue-hooks",
+    "scripts": {
+        "push": "npm publish --access public"
+    },
+    "version": "0.0.1",
+    "main": "index.js"
+}

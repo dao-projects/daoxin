@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "@daoxin/create-cli",
+  "version": "0.0.7",
+  "main": "index.js",
+  "bin": {
+    "@daoxin/create-cli": "index.js"
+  },
+  "scripts": {
+    "push": "npm publish --access public"
+  },
+  "files": [
+    "index.js",
+    "template",
+    "src"
+  ],
+  "_main": "./dist/common.umd.cjs",
+  "_module": "./dist/common.js",
+  "_exports": {
+    ".": {
+      "import": "./dist/common.js",
+      "require": "./dist/common.umd.cjs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dao-projects/daoxin.git",
+    "directory": "packages/create-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/dao-projects/daoxin/issues"
+  },
+  "homepage": "https://github.com/dao-projects/daoxin/tree/main/packages/create-cli#readme",
+  "author": "Daoxin",
+  "license": "MIT"
+}
