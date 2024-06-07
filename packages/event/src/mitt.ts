@@ -5,7 +5,7 @@ export type EventType = string | symbol;
 export type Handler<T = unknown> = (event: T) => void;
 export type WildcardHandler<T = Record<string, unknown>> = (
   type: keyof T,
-  event: T[keyof T]
+  event: T[keyof T],
 ) => void;
 
 // An array of all currently registered event handlers for a type
@@ -28,13 +28,13 @@ export interface Emitter<Events extends Record<EventType, unknown>> {
 
   off<Key extends keyof Events>(
     type: Key,
-    handler?: Handler<Events[Key]>
+    handler?: Handler<Events[Key]>,
   ): void;
   off(type: "*", handler: WildcardHandler<Events>): void;
 
   emit<Key extends keyof Events>(type: Key, event: Events[Key]): void;
   emit<Key extends keyof Events>(
-    type: undefined extends Events[Key] ? Key : never
+    type: undefined extends Events[Key] ? Key : never,
   ): void;
 }
 
@@ -44,7 +44,7 @@ export interface Emitter<Events extends Record<EventType, unknown>> {
  * @returns {Mitt}
  */
 export default function mitt<Events extends Record<EventType, unknown>>(
-  all?: EventHandlerMap<Events>
+  all?: EventHandlerMap<Events>,
 ): Emitter<Events> {
   type GenericEventHandler =
     | Handler<Events[keyof Events]>

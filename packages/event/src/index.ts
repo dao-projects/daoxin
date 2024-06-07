@@ -10,7 +10,7 @@ export default class EventBus {
       this.listeners.set(
         event,
         this.listeners.get(event)?.add({ once, handler }) ??
-          new Set([{ once, handler }])
+          new Set([{ once, handler }]),
       );
     });
   }

@@ -14,6 +14,7 @@ $ npm init -w packages/icons
 
 # 添加npm依赖（单个）
 $ npm install axios -w icons
+npm i -D typescript -w @daoxin/tracker
 
 # 添加npm依赖（全部）
 $ npm install axios -ws // 或($ npm install axios --workspaces)

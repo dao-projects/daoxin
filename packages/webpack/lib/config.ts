@@ -21,7 +21,7 @@ type Nonfalseable<T> = T extends false ? never : T;
 
 export function createconfig(
   env: Record<string, any>,
-  argv: Record<string, any>
+  argv: Record<string, any>,
 ): Configuration {
   console.log("env:", env, "\n", "argv:", argv);
 
@@ -74,8 +74,8 @@ export function createconfig(
     参数object["mode"] === "production"
       ? "production"
       : 参数object["mode"] === "development"
-      ? "development"
-      : process.env.NODE_ENV;
+        ? "development"
+        : process.env.NODE_ENV;
   // const isDevelopment = process.env.NODE_ENV !== "production";
   const defaultport = 10000;
   const port =
@@ -146,10 +146,10 @@ export function createconfig(
       fs.existsSync(path.join(__dirname, "src", "index.tsx"))
         ? path.join(__dirname, "src", "index.tsx")
         : fs.existsSync(path.join(__dirname, "src", "index.ts"))
-        ? path.join(__dirname, "src", "index.ts")
-        : fs.existsSync(path.join(__dirname, "src", "index.jsx"))
-        ? path.join(__dirname, "src", "index.jsx")
-        : path.join(__dirname, "src", "index.js"),
+          ? path.join(__dirname, "src", "index.ts")
+          : fs.existsSync(path.join(__dirname, "src", "index.jsx"))
+            ? path.join(__dirname, "src", "index.jsx")
+            : path.join(__dirname, "src", "index.js"),
     ].filter(Boolean),
     output: {
       publicPath,
@@ -361,12 +361,12 @@ typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ?
             sourceMaps: shouldUseSourceMap,
             plugins: [].filter(Boolean),
             presets: [["@babel/preset-react", { runtime: "automatic" }]].filter(
-              Boolean
+              Boolean,
             ),
 
             babelrc: false,
             configFile: fs.existsSync(
-              path.resolve(__dirname, "babel.config.js")
+              path.resolve(__dirname, "babel.config.js"),
             )
               ? path.resolve(__dirname, "babel.config.js")
               : false,
@@ -389,7 +389,7 @@ typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ?
               loader: require.resolve("ts-loader"),
               options: {
                 configFile: fs.existsSync(
-                  path.resolve(__dirname, "tsconfig.json")
+                  path.resolve(__dirname, "tsconfig.json"),
                 )
                   ? path.resolve(__dirname, "tsconfig.json")
                   : false,

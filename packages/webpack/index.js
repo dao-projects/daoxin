@@ -342,7 +342,7 @@ const webpackBaseConfig = {
       new webpack.BannerPlugin(
         `***********************************************\r\n@version: ${
           pkg.version
-        }\r\n@Author: @DaoXin <liuhangbiaoo@gmail.com>\r\n@Date: ${currentDate()}\r\n***********************************************`
+        }\r\n@Author: @DaoXin <liuhangbiaoo@gmail.com>\r\n@Date: ${currentDate()}\r\n***********************************************`,
       ),
     // OSS 文件上传
     isProd &&
@@ -462,7 +462,7 @@ const initProject = () => {
   isDirExist("src");
   isFileExist(
     "public/index.html",
-    `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" /><meta http-equiv="X-UA-Compatible" content="ie=edge" /><link rel="icon" href="favicon.ico" /><title><%= htmlWebpackPlugin.options.title %></title></head><body><script src="https://cdn.dpfrc.com/libs/px2rem.js"></script><div id="app"></div><script src="https://cdn.dpfrc.com/dev.js"></script></body></html>`
+    `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport" /><meta http-equiv="X-UA-Compatible" content="ie=edge" /><link rel="icon" href="favicon.ico" /><title><%= htmlWebpackPlugin.options.title %></title></head><body><script src="https://cdn.dpfrc.com/libs/px2rem.js"></script><div id="app"></div><script src="https://cdn.dpfrc.com/dev.js"></script></body></html>`,
   );
   // isFileExist(
   //     "src/index.ts",

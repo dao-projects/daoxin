@@ -8,10 +8,12 @@
  * @param { Boolean } lowerCase 是否返回传入值为小写
  * @returns { String } 返回传入值类型
  * @example
- *   getClass(/foo/); // => "RegExp"    
+ *   getClass(/foo/); // => "RegExp"
  */
 export const getClass = function (val, lowerCase = false) {
-  const valTemp = Object.prototype.toString.call(val).match(/^\[object\s(.*)\]$/)[1];
+  const valTemp = Object.prototype.toString
+    .call(val)
+    .match(/^\[object\s(.*)\]$/)[1];
   // 转换成小写
   if (lowerCase) valTemp = valTemp?.toLowerCase();
   return valTemp;

@@ -15,8 +15,10 @@
     "docs": "npm run docs --ws",
     "lint": "npm run lint --ws",
     "format": "prettier --write .",
-    "ci":"echo \"npm \" && exit 1",
-    "push:version":"npm run push -w=@daoxin/version"
+    "ci": "echo \"npm \" && exit 1",
+    "push:version": "npm run push -w=@daoxin/version",
+    "build:tracker": "npm run build -w=@daoxin/tracker",
+    "pr": "prettier --write \"packages/**/*.{js,jsx,ts,tsx,vue,json,css,scss,sass,html}\""
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,8 @@
   },
   "_publishConfig": {
     "@<em>daoxin</em>:registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.1"
   }
 }
