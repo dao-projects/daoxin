@@ -24,6 +24,7 @@ $ npm run dev  // 或 ($ npm run dev -ws)
 
 # 运行子项目（单个）
 $ npm run dev -w=@daoxin/config // 或($ --workspace=@daoxin/config)
+$ npm run build -w=@daoxin/tracker
 
 
 # 版本更新

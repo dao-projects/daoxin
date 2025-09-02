@@ -13,4 +13,8 @@ import { Tracker } from "@daoxin/tracker"
     whiteScreen:true
   });
 
+
+
+  npm run build -w=@daoxin/tracker
+
 ```

@@ -1,0 +1,19 @@
+{
+  "name": "@daoxin/bbf",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "push": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dao-projects/daoxin.git",
+    "directory": "packages/bbf"
+  },
+  "bugs": {
+    "url": "https://github.com/dao-projects/daoxin/issues"
+  },
+  "homepage": "https://github.com/dao-projects/daoxin/tree/main/packages/bbf#readme",
+  "author": "Daoxin",
+  "license": "MIT"
+}
